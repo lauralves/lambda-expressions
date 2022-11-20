@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 
 import entities.Product;
 
-public class Program {
+public class ProgramPredicate {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		
