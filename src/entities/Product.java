@@ -21,12 +21,10 @@ public class Product {
 		this.price = price;
 	}
 	
-	public static void staticProductConsumer(Product p) {
-		p.setPrice(p.getPrice() * 1.1);
+	public static String staticProductFunction(Product p) {
+		return p.getName().toUpperCase();
 	}
-	public void nonStaticProductConsumer () {
-		 price = price * 1.1;
-	}
+	
 	
 	@Override
 	public String toString() {
