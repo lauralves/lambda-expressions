@@ -22,7 +22,7 @@ public class ProgramFunction {
 		list.add(new Product("HD Case", 80.90));
 		
 		//criando uma nova list para pegar todos os nomes de Product com uppercase
-		List<String> names = list.stream().map(Product::staticProductFunction).collect(Collectors.toList());
+		List<String> names = list.stream().map(Product::nonStaticProductFunction).collect(Collectors.toList());
 		
 		names.forEach(System.out::println);
 	}
